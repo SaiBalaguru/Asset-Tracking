@@ -24,23 +24,41 @@ var devicedata = [{
     name:"Ipad pro",
     brand: "Apple",
     os: "Mac",
-    img:"../shared/device01.jpeg"
+    img:"../shared/device01.jpg",
+    details: "Latest Ipad from Apple with Mac operating system"
 },
 {
     name:"Laptop",
     brand: "Apple",
     os: "Mac",
-    img:"../shared/device02.jpeg"
+    img:"../shared/device02.jpg",
+    details: "Latest Laptop from Apple with Mac operating system"
 },
 {
     name:"Mobile",
     brand: "Samsung",
     os: "Android",
-    img:"../shared/device03.jpeg"
+    img:"../shared/device03.jpg",
+    details: "Latest Mobile from Samsung with Android operating system"
 },
 {
     name:"Laptop",
     brand: "Dell",
     os: "Windows",
-    img:"../shared/device04.jpeg"
+    img:"../shared/device04.jpg",
+    details: "Latest Laptop from Dell with Windows operating system"
+},
+{
+    name:"Laptop",
+    brand: "Dell",
+    os: "Linux",
+    img:"../shared/device05.jpg",
+    details: "Latest Laptop from Dell with Linux operating system"
+},
+{
+    name:"Laptop",
+    brand: "Lenovo",
+    os: "Windows",
+    img:"../shared/device06.jpg",
+    details: "Latest Laptop from Lenovo with Windows operating system"
 }];
