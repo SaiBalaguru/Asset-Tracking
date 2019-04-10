@@ -21,6 +21,10 @@ ul {
     float: left;
   }
   
+  #asset_logo{
+    height: 10%;
+    width: 100%;
+  }
   
 
   li img{

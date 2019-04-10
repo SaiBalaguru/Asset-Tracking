@@ -43,7 +43,10 @@
       cursor: pointer;
     }
     
-    
+    #asset_logo{
+      height: 10%;
+      width: 100%;
+    }
   
     li img{
       height: 13%;

@@ -157,3 +157,8 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
+#asset_logo{
+  margin-left: 32%;
+  height: 80px; 
+}
