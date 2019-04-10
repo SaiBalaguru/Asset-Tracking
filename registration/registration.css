@@ -24,8 +24,8 @@ body {
   /* Add padding to containers */
   .container {
     padding-left: 2%;
-    padding-top: 2%;
     padding-right: 2%;
+    padding-top:0.4%;
     background-color: white;
     width:50%;
     margin-left: 50%;

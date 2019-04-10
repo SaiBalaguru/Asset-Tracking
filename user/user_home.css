@@ -1,5 +1,5 @@
 body{
-  background-color: #eaeaea
+  background-color: white;
 }
 
 .abc{
@@ -133,19 +133,20 @@ th, td {
 #current_devices{
   font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
   font-weight: normal;
-  color: #7a9fdb;
+  color: black;
   font-size: 1.75em;
   letter-spacing: .2em;
   line-height: 1.1em;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 2%;
 }
 
 #requested_devices{
   font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
   font-weight: normal;
   margin-top: 5%;
-  color: #7a9fdb;
+  color: black;
   font-size: 1.75em;
   letter-spacing: .2em;
   line-height: 1.1em;
@@ -159,7 +160,7 @@ th, td {
   transition: 0.3s;
   width: 25%;
   height: 20%;
-  margin-top: 8%;
+  margin-top: 3%;
   margin-right: 8%;
 }
 
@@ -229,4 +230,9 @@ color: #212529;
 
   #hello{
     display: inline;
+  }
+
+  #asset_logo{
+    height: 10%;
+    width: 100%;
   }
