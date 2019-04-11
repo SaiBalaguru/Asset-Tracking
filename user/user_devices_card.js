@@ -34,6 +34,8 @@ devicedata.forEach(function (device, index) {
       localStorage.setItem("id",device.id);
       localStorage.setItem("name",device.name);
       localStorage.setItem("image",device.img);
+      localStorage.setItem("brand",device.brand);
+      localStorage.setItem("os",device.os);
     }
   })
  }

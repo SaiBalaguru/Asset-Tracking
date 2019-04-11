@@ -27,7 +27,7 @@ var devicedata = [{
     os: "Mac",
     img:"../shared/device01.jpg",
     details: "Latest Ipad from Apple with Mac operating system",
-    requested: " normal0"
+    requested: "normal0"
 },
 {
     id: 102,
@@ -36,7 +36,7 @@ var devicedata = [{
     os: "Mac",
     img:"../shared/device02.jpg",
     details: "Latest Laptop from Apple with Mac operating system",
-    requested: " normal1"
+    requested: "normal1"
 },
 {
     id:103,
@@ -54,7 +54,7 @@ var devicedata = [{
     os: "Windows",
     img:"../shared/device04.jpg",
     details: "Latest Laptop from Dell with Windows operating system",
-    requested: " normal3"
+    requested:"normal3"
 },
 {
     id:105,
