@@ -21,6 +21,7 @@ var userdata = [{
 }];
 
 var devicedata = [{
+    id: 101,
     name:"Ipad pro",
     brand: "Apple",
     os: "Mac",
@@ -28,6 +29,7 @@ var devicedata = [{
     details: "Latest Ipad from Apple with Mac operating system"
 },
 {
+    id: 102,
     name:"Laptop",
     brand: "Apple",
     os: "Mac",
@@ -35,6 +37,7 @@ var devicedata = [{
     details: "Latest Laptop from Apple with Mac operating system"
 },
 {
+    id:103,
     name:"Mobile",
     brand: "Samsung",
     os: "Android",
@@ -42,6 +45,7 @@ var devicedata = [{
     details: "Latest Mobile from Samsung with Android operating system"
 },
 {
+    id:104,
     name:"Laptop",
     brand: "Dell",
     os: "Windows",
@@ -49,6 +53,7 @@ var devicedata = [{
     details: "Latest Laptop from Dell with Windows operating system"
 },
 {
+    id:105,
     name:"Laptop",
     brand: "Dell",
     os: "Linux",
@@ -56,6 +61,7 @@ var devicedata = [{
     details: "Latest Laptop from Dell with Linux operating system"
 },
 {
+    id:106,
     name:"Laptop",
     brand: "Lenovo",
     os: "Windows",
