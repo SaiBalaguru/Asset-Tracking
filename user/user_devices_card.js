@@ -11,8 +11,7 @@ devicedata.forEach(function (device, index) {
         Request
       </button>
       <button type="button" class="btn btn-dark request" data-toggle="modal" data-target="#instant_request" > Instant Request</button>
-      <div id="requested">
-      </div>
+      
       </div>
   </div>`;
     document.getElementById('row1').innerHTML += card;
@@ -25,8 +24,10 @@ devicedata.forEach(function (device, index) {
   i++;
   }
 )
+
  function requested_item(element){
    console.log(element.id);
+   document.getElementById('requested').innerHTML = "Device Requested";
   devicedata.forEach(function(device){
     //console.log(device)
     if(device.requested == element.id){
@@ -39,6 +40,9 @@ devicedata.forEach(function (device, index) {
     }
   })
  }
+
+ 
+
 //  var request_device = document.getElementsByClassName('btn btn-dark normal');
 //  console.log(request_device);
 

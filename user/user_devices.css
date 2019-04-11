@@ -56,6 +56,11 @@ img {vertical-align: middle;}
 
 }
 
+#requested{
+  text-align: center;
+    color: red;
+    font-size: x-large;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
