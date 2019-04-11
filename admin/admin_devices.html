@@ -19,12 +19,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"  media="screen" href="../navbar/navbar.css">
+
 
 </head>
 
 <body>
 
-  <div class="w3-sidebar w3-blue-grey w3-bar-block side " style="width:25%;">
+  <!-- <div class="w3-sidebar w3-blue-grey w3-bar-block side " style="width:25%;">
       <img src="../shared/AssetLogo.jpg" id="asset_logo">
     <h3 class="w3-bar-item"><img src="../shared/userimage.png"> <div id = "hello"></div></h3>
     <a href="./admin_home.html" class="w3-bar-item w3-button"><b>Home</b></a>
@@ -52,12 +54,21 @@
     <div id="column1">
       <input type="search" ng-model="search" class="form-control input-lg" style="margin-top: 5%; width: 100%"
         id="search" placeholder="Type your search character">
+    </div> -->
+    <div class="navbar">
+        <a class="active home" href="../admin/admin_home.html"><i class="fa fa-fw fa-home fa-lg"></i> Assets-Tracker</a>
+    
+        <a href="../admin/admin_myaccount.html"><i class="fa fa-fw fa-user fa-lg"></i></a>
+        <a href="admin_notification.html"><i class="fa fa-fw fa-bell fa-lg"></i></a>
+        <a href="../admin/admin_devices.html"><i class="fa fa-fw fa-mobile fa-lg"></i></a>
+        <a href="../login/login.html" class="btn btn-danger" style="width:10%;">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
     </div>
-
     <div id="column2">
-      <div class="dropdown" style="margin-left: 85%;">
+      <div class="dropdown" style="margin-left: 75%; margin-top: -8%;width:100%;">
 
-        <button class="btn btn-dark" id="add_device" data-toggle="modal" data-target="#add_new_device">Add Device</button>
+        <button class="btn btn-secondary" id="add_device" data-toggle="modal" data-target="#add_new_device">Add New Device</button>
 
         <!-- <div id="myDropdown" class="dropdown-content">
           <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
@@ -117,12 +128,12 @@
   </div> -->
 
 
-  <div class="row" style="margin-left: 27%;" id="row1">
+  <div class="row" style="margin-left: 10%; margin-top:-11%;" id="row1">
 
 
   </div>
 
-  <div class="row" style="margin-left: 27%;" id="row2">
+  <div class="row" style="margin-left: 10%;" id="row2">
 
   </div>
   <br>

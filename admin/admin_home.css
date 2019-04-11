@@ -30,30 +30,30 @@
     }
 
     #emergency_requested_devices{
-      position: absolute;
+      position: relative;
       margin-left: 40%;
-      top: 22%;
+      margin-top: 1%;
       width:40%
     }
 
     #normal_requested_devices{
-      position: absolute;
+      position: relative;
       margin-left: 40%;
-      top: 70%;
+      margin-top: 8%;
       width:40%
     }
 
     .emergency{
-      position: absolute;
-      top: 10%;
-      left: 30%;
+      position: relative;
+      margin-left: 40%;
+      margin-top: 5%;
       font-size:x-large
     }
 
     .normal{
-      position: absolute;
-      top: 55%;
-      left: 30%;
+      position: relative;
+      margin-left: 40%;
+      margin-top: 1%;
       font-size: x-large;
     }
 
@@ -85,14 +85,7 @@
 
   }
 
-  .w3-sidebar {
-    height: 100%;
-    width: 200px;
-    background-color: #fff;
-    position: absolute;
-    z-index: 1;
-    overflow: auto;
-}
+  
   
 div h3 img{
   width:20%;
@@ -132,7 +125,7 @@ div h3 img{
   /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
-    position: absolute;
+    position: relative;
     top: 50%;
     width: auto;
     padding: 16px;
@@ -146,7 +139,7 @@ div h3 img{
   }
   
   #user_info{
-    position: absolute;
+    position: relative;
     top: 43%;
     left: 52%;
   
@@ -173,7 +166,7 @@ div h3 img{
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
-    position: absolute;
+    position: relative;
     bottom: 8px;
     width: 100%;
     text-align: center;
@@ -184,13 +177,13 @@ div h3 img{
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
-    position: absolute;
+    position: relative;
     top: 0;
   }
 
   
   .corousel{
-    position: absolute;
+    position: relative;
     top: 10%;
     left: 30%
   }
@@ -220,7 +213,7 @@ div h3 img{
   }
   
   .allocated_devices{
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 30%;
   }
@@ -329,4 +322,9 @@ div h3 img{
 
   #hello{
     display: inline;
+  }
+  .row .user_image{
+    position: relative;
+    margin-left: 10%;
+    margin-top: 15%;
   }

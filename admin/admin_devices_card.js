@@ -1,8 +1,8 @@
 var det = devicedata.map(x => x.details);
 var i=0;
 devicedata.forEach(function (device, index) {
-    var card = `<div id="card">
-    <img class="imgr" src="${device.img}" alt="Avatar" style="width:100%; ">
+    var card = `<div class="card">
+    <img class="imgr" src="${device.img}" alt="Avatar" style="width:100%; margin-left:25%; ">
     <div class="container">
       <h4>${device.name}</h4>
       <p>${device.brand}</p>
