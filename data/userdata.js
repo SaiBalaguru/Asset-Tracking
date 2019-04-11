@@ -26,7 +26,8 @@ var devicedata = [{
     brand: "Apple",
     os: "Mac",
     img:"../shared/device01.jpg",
-    details: "Latest Ipad from Apple with Mac operating system"
+    details: "Latest Ipad from Apple with Mac operating system",
+    requested: " normal0"
 },
 {
     id: 102,
@@ -34,7 +35,8 @@ var devicedata = [{
     brand: "Apple",
     os: "Mac",
     img:"../shared/device02.jpg",
-    details: "Latest Laptop from Apple with Mac operating system"
+    details: "Latest Laptop from Apple with Mac operating system",
+    requested: " normal1"
 },
 {
     id:103,
@@ -42,7 +44,8 @@ var devicedata = [{
     brand: "Samsung",
     os: "Android",
     img:"../shared/device03.jpg",
-    details: "Latest Mobile from Samsung with Android operating system"
+    details: "Latest Mobile from Samsung with Android operating system",
+    requested: "normal2"
 },
 {
     id:104,
@@ -50,7 +53,8 @@ var devicedata = [{
     brand: "Dell",
     os: "Windows",
     img:"../shared/device04.jpg",
-    details: "Latest Laptop from Dell with Windows operating system"
+    details: "Latest Laptop from Dell with Windows operating system",
+    requested: " normal3"
 },
 {
     id:105,
@@ -58,7 +62,8 @@ var devicedata = [{
     brand: "Dell",
     os: "Linux",
     img:"../shared/device05.jpg",
-    details: "Latest Laptop from Dell with Linux operating system"
+    details: "Latest Laptop from Dell with Linux operating system",
+    requested: "normal4"
 },
 {
     id:106,
@@ -66,5 +71,6 @@ var devicedata = [{
     brand: "Lenovo",
     os: "Windows",
     img:"../shared/device06.jpg",
-    details: "Latest Laptop from Lenovo with Windows operating system"
+    details: "Latest Laptop from Lenovo with Windows operating system",
+    requested: "normal5"
 }];

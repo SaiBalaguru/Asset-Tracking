@@ -1,43 +1,44 @@
-var det = devicedata.map(x => x.details);
+// var det = devicedata.map(x => x.details);
 var i=0;
 devicedata.forEach(function (device, index) {
-    var card = `<div class="card">
+    var card = `<div class="card" id="card${index}">
     <img class="imgr" src="${device.img}" alt="Avatar" style="width:100%; ">
     <div class="container">
       <h4>${device.name}</h4>
       <p>${device.brand}</p>
-      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter${index}">
-        Details
+      <p>${device.os}</p>
+      <button type="button" class="btn btn-dark normal" id="normal${index}" onclick="requested_item(normal${index})">
+        Request
       </button>
       <button type="button" class="btn btn-dark request" data-toggle="modal" data-target="#instant_request" > Instant Request</button>
-    </div>
-  </div>
-  <div class="modal" id="exampleModalCenter${index}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle"><h5 id="devicename">${device.name}</h5></h5>
-          <h5 id="deviceid">${device.id}</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ${det[i]}
-        </div>
-        <div class="modal-footer">
-        
-          <button type="button" class="btn btn-dark request" data-dismiss="modal">Request</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
+      <div id="requested">
       </div>
-    </div>
+      </div>
   </div>`;
     document.getElementById('row1').innerHTML += card;
-
+  // var req = document.getElementById('btn btn-dark request');
+  // req.onclick = function(){
+  //   localStorage.setItem("device_name",device.name);
+  //   localStorage.setItem("device_id",device.id);
+  //   localStorage.setItem("device_img",device.img);
+  // }
   i++;
-
   }
 )
+ function requested_item(element){
+   console.log(element.id);
+  devicedata.forEach(function(device){
+    //console.log(device)
+    if(device.requested == element.id){
+      console.log(device.requested);
+      localStorage.setItem("id",device.id);
+      localStorage.setItem("name",device.name);
+      localStorage.setItem("image",device.img);
+    }
+  })
+ }
+//  var request_device = document.getElementsByClassName('btn btn-dark normal');
+//  console.log(request_device);
+
 
 
