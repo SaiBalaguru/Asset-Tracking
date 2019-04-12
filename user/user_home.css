@@ -80,6 +80,8 @@ ul {
 
 .container {
   padding: 2px 16px;
+  width:105% !important;
+  
 }
 
 
@@ -129,6 +131,8 @@ th, td {
   color: #555;
   font-size: 250%;
   text-transform: uppercase;
+  width:100%;
+
 
 }
 
@@ -138,9 +142,10 @@ th, td {
   margin-top: 5%;
   color: #555;
   font-size: 250%;
- 
+ width:100%;
   position: relative;
   text-transform: uppercase;
+  
 }
 
 .card {
