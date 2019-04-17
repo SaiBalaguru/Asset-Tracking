@@ -1,66 +1,50 @@
-for(var i=0; i<3; i++){
-    var card = `<div id="card">
-    <img class="imgr" src="${devicedata[i].img}" alt="Avatar" style="width:100%; ">
+// var det = devicedata.map(x => x.details);
+var i=0;
+devicedata.forEach(function (device, index) {
+    var card = `<div class="card" id="card${index}">
+    <img class="imgr" src="${device.img}" alt="Avatar" style="width:100%; ">
     <div class="container">
-      <h4>${devicedata[i].name}</h4>
-      <p>${devicedata[i].brand}</p>
-      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
-        Details
+      <h4>${device.name}</h4>
+      <p>${device.brand}</p>
+      <p>${device.os}</p>
+      <button type="button" class="btn btn-dark normal" id="normal${index}" onclick="requested_item(normal${index})">
+        Request
       </button>
-    </div>
-  </div>
-  <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">${devicedata[i].name}</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ${devicedata[i].details}
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-dark" data-dismiss="modal">Request</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
+      <button type="button" class="btn btn-dark request" data-toggle="modal" data-target="#instant_request" > Instant Request</button>
+      
       </div>
-    </div>
   </div>`;
-  document.getElementById('row1').innerHTML += card;
+    document.getElementById('row1').innerHTML += card;
+  // var req = document.getElementById('btn btn-dark request');
+  // req.onclick = function(){
+  //   localStorage.setItem("device_name",device.name);
+  //   localStorage.setItem("device_id",device.id);
+  //   localStorage.setItem("device_img",device.img);
+  // }
+  i++;
+  }
+)
 
-}
+ function requested_item(element){
+   console.log(element.id);
+   document.getElementById('requested').innerHTML = "Device Requested";
+  devicedata.forEach(function(device){
+    //console.log(device)
+    if(device.requested == element.id){
+      console.log(device.requested);
+      localStorage.setItem("id",device.id);
+      localStorage.setItem("name",device.name);
+      localStorage.setItem("image",device.img);
+      localStorage.setItem("brand",device.brand);
+      localStorage.setItem("os",device.os);
+    }
+  })
+ }
 
-for(var i=3; i<6; i++){
-    var card2 = `<div id="card">
-    <img class="imgr" src="${devicedata[i].img}" alt="Avatar" style="width:100%; ">
-    <div class="container">
-      <h4>${devicedata[i].name}</h4>
-      <p>${devicedata[i].brand}</p>
-      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
-        Details
-      </button>
-    </div>
-  </div>
-  <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">${devicedata[i].name}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ${devicedata[i].details}
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-dark" data-dismiss="modal">Request</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>`;
-  document.getElementById('row1').innerHTML += card2;
-}
+ 
+
+//  var request_device = document.getElementsByClassName('btn btn-dark normal');
+//  console.log(request_device);
+
+
+

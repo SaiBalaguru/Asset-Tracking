@@ -11,50 +11,25 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"  media="screen" href="../navbar/navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-
-  <div class="w3-sidebar w3-blue-grey w3-bar-block side" style="width:25%">
-    <img src="../shared/AssetLogo.jpg" id="asset_logo">
-    <h3 class="w3-bar-item">
-      <img src="../shared/userimage.png">
-      <div id="hello"></div>
-    </h3>
-    <a href="./user_home.html" class="w3-bar-item w3-button">
-      <b>Home</b>
-    </a>
-    <a href="./user_devices.html" class="w3-bar-item w3-button">
-      <b>Devices</b>
-    </a>
-    <a href="./user_notification.html" class="w3-bar-item w3-button">
-      <b>Notifications</b>
-    </a>
-    <a href="#" class="w3-bar-item w3-button">
-      <b>My Account</b>
-    </a>
-    <button type="button" id="logout" class="w3-bar-item w3-button" data-toggle="modal" data-target=".bs-example-modal-sm">
-      <b>Logout</b>
-    </button>
-  </div>
-
-  <div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-
-          <h4>Logout
-            <i class="fa fa-lock"></i>
-          </h4>
-        </div>
-        <div class="modal-body">
-          <i class="fa fa-question-circle"></i> Are you sure you want to log out?</div>
-        <div class="modal-footer">
-          <a href="../login/login.html" class="btn btn-dark btn-block">Logout</a>
-        </div>
+    <div class="navbar">
+        <a class="active home" href="../user/user_home.html"><i class="fa fa-fw fa-home fa-lg"></i> Assets-Tracker</a> 
+    
+        <a href="../user/user_my_account.html"><i class="fa fa-fw fa-user fa-lg" ></i></a> 
+        <a href="../user/user_notification.html"><i class="fa fa-fw fa-bell fa-lg" ></i></a> 
+        <a href="../user/user_devices.html"><i class="fa fa-fw fa-mobile fa-lg"></i></a>
+        <a href="../login/login.html" class="btn btn-danger" style="width:10%;">
+            <span class="glyphicon glyphicon-log-out"></span> Log out
+          </a>
+     
       </div>
-    </div>
-  </div>
+
+  
 
   <div class="row">
     <div class="user_image">
@@ -71,7 +46,7 @@
 
       <tr>
         <td>User ID:</td>
-        <td>14491</td>
+        <td>144991</td>
       </tr>
       <tr>
         <td>Credit Limit:</td>
@@ -118,9 +93,37 @@
         </div>
       </div>
     </div>
-    <br>
-    <br>
-    <br>
+
+
+        <!-- <button class="btn btn-danger" id="logout" href="#" data-toggle="modal" data-target="#login-modal">Logout</button>
+        <div class="modal" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                  <div class="loginmodal-container">
+                    <h1>Logout</h1>
+                    <br>
+                    <form>
+                        <p style = "margin-left: 23%"> Are you sure to Logout?</p>
+                        <br>
+                        <div class="row">
+                        <div class = " offset-3 col-md-3" >
+                      <a href="../login/login.html" class="FP"></a>
+                        Yes
+                      </button></div>
+                      <div class = "col-md-3">
+                      <button type="submit" class="FP">
+                        No
+                       </button>
+                    </div>
+                  </div>
+                    </form>
+                  </div>
+                </div>
+              </div> -->
+      
+
+  
+
+
     <script src="./user_my_account.js"></script>
     <script src="./user_name.js"></script>
 
