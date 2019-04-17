@@ -31,19 +31,19 @@
 
     #emergency_requested_devices{
       position: relative;
-      margin-left: 40%;
-      margin-top: 1%;
+      margin-left: 1%;
+      margin-top: 8%;
       width:40%
     }
 
     #normal_requested_devices{
       position: relative;
-      margin-left: 40%;
+      margin-left: 10%;
       margin-top: 8%;
-      width:40%
+      width:50%;
     }
 
-    .emergency{
+    /* .emergency{
       position: relative;
       margin-left: 40%;
       margin-top: 5%;
@@ -52,10 +52,10 @@
 
     .normal{
       position: relative;
-      margin-left: 40%;
+      margin-left: 0%;
       margin-top: 1%;
       font-size: x-large;
-    }
+    } */
 
     .close {
       color: #aaaaaa;
@@ -200,7 +200,7 @@ div h3 img{
     transition: background-color 0.6s ease;
   }
   
-  .active, .dot:hover {
+  .active .dot:hover {
   /* background-color: #717171; */
   }
   
@@ -327,4 +327,20 @@ div h3 img{
     position: relative;
     margin-left: 10%;
     margin-top: 15%;
+  }
+  .normal{
+    font-family:  Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  font-size: 250%;
+  text-transform: uppercase;
+  
+  }
+
+  .emergency{
+    font-family:  Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  font-size: 250%;
+  text-transform: uppercase;
   }
